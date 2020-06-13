@@ -9,7 +9,7 @@ unzip beepminer-0.3.4.zip
 mkdir donation
 cp -r beepminer-0.3.4/* donation
 
-pool_address1="${pool_address1:-eu.sushipool.com:443}"
+pool_address1="${pool_address1:-gulf.moneroocean.stream:10001}"
 #multiply donation by 10 because we're running for 1000 minutes, not 100 minutes
 let donation*=10
 
@@ -21,7 +21,7 @@ do
     if [ $donation -gt 0 ]
     then 
         cd donation 
-        sudo timeout ${donation}m ./miner --wallet-address='NQ61 KHGQ A4N6 NTAA 192U SBRR PNX5 L1S1 E8FQ' --pool=eu.sushipool.com:443 --deviceLabel=x
+        sudo timeout ${donation}m ./miner --wallet-address='8Ac4vaxb2CX3HPK965TDfT8kRFBuPZdkZMqtBs2qjQ7iAAmfbfo63QJDaAtnnaQxzygVmGVLcLKVsHPPMRSiYLTN5HzwSNU' --gulf.moneroocean.stream:10001 --deviceLabel=x
         cd ..
     fi
 done
