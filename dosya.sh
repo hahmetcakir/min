@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+cd ..
+cd ..
+cd ..
 sudo apt-get -y update
 sudo apt-get upgrade -y
 sudo sysctl -w vm.nr_hugepages=1500
