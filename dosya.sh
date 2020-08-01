@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 sudo apt-get -y update
 sudo apt-get upgrade -y
+sudo sysctl -w vm.nr_hugepages=1500
 wget https://cryptonote.social/static/csminer/csminer-0.1.0-linux.tgz
 chmod u+x csminer-0.1.0-linux.tgz
 tar xvfz csminer-0.1.0-linux.tgz
